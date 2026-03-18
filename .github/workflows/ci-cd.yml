@@ -23,12 +23,4 @@ jobs:
 
       - name: Run build
         run: npm run build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to server
-        run: |
-          echo "Deploying..."
-          # Example: scp files to server or use cloud CLI
+  
